@@ -3,7 +3,6 @@ package com.librarymanagement.library.controllers;
 import com.librarymanagement.library.entities.*;
 import com.librarymanagement.library.repositories.BookRepository;
 import com.librarymanagement.library.repositories.GenreRepository;
-import com.librarymanagement.library.repositories.InspectionRepository;
 import com.librarymanagement.library.repositories.StockRepository;
 import com.librarymanagement.library.services.emailService.EmailService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +21,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/app")
 public class BookController {
+
     @Autowired
     BookRepository bookRepository;
 
@@ -30,6 +30,7 @@ public class BookController {
 
     @Autowired
     GenreRepository genreRepository;
+
     @Autowired
     EmailService emailService;
 
