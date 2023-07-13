@@ -1,0 +1,51 @@
+.back {
+  height: 100%;
+}
+.d-flex {
+  background-image: url("./../../assets/images/mainback.jpg");
+}
+.new-reader{
+  text-align: right;
+}
+.panel-body {
+  width: 80%;
+  -webkit-box-shadow: -2px 12px 5px 9px #ccc;
+  -moz-box-shadow: -2px 12px 5px 9px #ccc;
+  box-shadow: -2px 1px 5px 9px #ccc;
+  display: block;
+  margin-top: 10%;
+  margin-bottom: 15%;
+  background-color: #ccc;
+}
+
+.table > tbody > tr > td,
+.table > tbody > tr > th {
+  background-color: #d7b17e;
+}
+
+.table thead tr th {
+  background-color: #98BF64;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+  background-color: #4C9A2A;
+  border-color: #98BF64;
+}
+
+.bottom10 {
+  margin-bottom: 10px;
+}
+
+.btn-danger,
+.btn-danger:hover,
+.btn-danger:active,
+.btn-danger:visited,
+.btn-danger:focus {
+  background-color: #4C9A2A;
+  border-color: #98BF64;
+}
+

@@ -1,0 +1,80 @@
+<div class="back">
+  <div class="panel panel-primary">
+    <div class="d-flex align-items-center justify-content-center">
+      <div class="container p-5 borrow-book">
+        <div id="borrow-book">
+          <h3>Отдаване на книга</h3>
+          <form (ngSubmit)="onSubmit()" #myForm="ngForm">
+            <div class="row top10">
+              <div class="col-sm-2">
+                <label for="reader">Читател</label>
+              </div>
+              <div class="col-sm-4">
+                <select data-live-search="true" name = "reader"  class="form-select" id="reader" [(ngModel)]="reader" (change)="onChangeReader()" required>
+                  <option *ngFor="let reader of readers" [ngValue]="reader">{{reader.first_name + ' ' + reader.last_name}}</option>
+                </select>
+              </div>
+              <div class="col-sm-3">
+                <input type="text" class="form-control" id="reader_email" [ngModel]="email" name="reader_email" readonly>
+              </div>
+              <div class="col-sm-3">
+                <input type="text" class="form-control" id="reader_phone" [ngModel]="phone" name="reader_phone" readonly>
+              </div>
+            </div>
+            <div class="row top10">
+              <div class="col-sm-2">
+                <label for="book">Книга</label>
+              </div>
+              <div class="col-sm-4">
+                <select data-live-search="true" name = "book" class="form-select" id="book" [(ngModel)]="book" (change)="onChangeBook()" required>
+                  <option *ngFor="let book of books" [ngValue]="book">{{book.title}}</option>
+                </select>
+              </div>
+              <div class="col-sm-3">
+                <input type="text" class="form-control" id="book_author" [ngModel]="author" name="book_author" readonly>
+              </div>
+              <div class="col-sm-3">
+                <input type="text" class="form-control" id="book_year" [ngModel]="year" name="book_year" readonly>
+              </div>
+            </div>
+            <div class="row top10">
+              <div class="col-md-3">
+                <label for="today">Дата на издаване: </label>
+              </div>
+              <div class="col-md-5">
+                <input type="text" class="form-control" id="today" [ngModel]="today" name="today" readonly>
+              </div>
+            </div>
+            <div class="row top10">
+              <div class="col-md-3">
+                <label for="returnDate">Дата на връщане: </label>
+              </div>
+              <div class="col-md-5">
+                <input type="datetime-local" class="form-control" id="returnDate" name="returnDate" step="1" [ngModel]="returnDate | date:'yyyy-MM-ddTHH:mm:ss'"
+                       (ngModelChange)="returnDate = $event" required>
+              </div>
+            </div>
+            <p name="msg" style="color: red">{{msg}}</p>
+          </form>
+        </div>
+        <div class="row top10">
+          <div class="col text-center">
+            <button type="submit" [disabled]="!myForm.form.valid" (click)="onSubmit()" class="btn btn-primary">Запази</button>
+          </div>
+          <div class="col text-center">
+            <button type="button" (click)="openPDF()" class="btn btn-dark">Изтегли PDF</button>
+          </div>
+          <div class="top10">
+            <p><b>Пояснение: </b> <i>Не намираш читателя, който ти трябва в падащото меню? Няма проблем, можеш да го добавиш като натиснеш бутона <b>"Добави читател"</b> отдолу .</i></p>
+          </div>
+          <div class="col text-center">
+            <button type="submit" (click)="goToNewReader()" class="btn btn-primary">Добави Читател</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

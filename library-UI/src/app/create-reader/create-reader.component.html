@@ -1,0 +1,49 @@
+<div class="back">
+  <div class="panel panel-primary">
+    <div class="d-flex align-items-center justify-content-center">
+      <div class="container p-5 create-reader">
+        <h3>Добави читател</h3>
+        <form (ngSubmit)="onSubmit()" #myForm="ngForm">
+          <div class="row top10">
+            <label for="first_name">Име</label>
+            <div class="col-sm-12">
+              <input class="form-control" type="text" id="first_name" required [(ngModel)]="first_name" name="first_name">
+            </div>
+          </div>
+
+          <div class="row top10">
+            <label for="last_name">Фамилия</label>
+            <div class="col-sm-12">
+              <input type="text" class="form-control" id="last_name" required [(ngModel)]="last_name" name="last_name">
+            </div>
+          </div>
+
+          <div class="row top10">
+            <label for="city">Град</label>
+            <div class="col-sm-12">
+              <input type="text" class="form-control" id="city" required [(ngModel)]="city" name="city">
+            </div>
+          </div>
+
+          <div class="row top10">
+            <label for="phone">Телефонен номер</label>
+            <div class="col-sm-12">
+              <input type="text" class="form-control" id="phone" required [(ngModel)]="phone" name="phone">
+            </div>
+          </div>
+
+          <div class="row top10">
+            <label for="email">Email</label>
+            <div class="col-sm-12">
+              <input type="text" class="form-control" id="email" required [(ngModel)]="email" name="email">
+            </div>
+          </div>
+
+          <p [hidden]="myForm.form.valid" style="color: #ff0000">Не сте въвели всички полета</p>
+          <button type="submit" [disabled]="!myForm.form.valid" class="btn btn-primary">Запази</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+

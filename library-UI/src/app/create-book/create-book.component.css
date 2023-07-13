@@ -1,0 +1,36 @@
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+  background-color: #4C9A2A;
+  border-color: #98BF64;
+}
+.create-book,
+.add-genre{
+  background-color: #ccc;
+  width: 40%;
+  -webkit-box-shadow: -2px 12px 5px 9px #ccc;
+  -moz-box-shadow: -2px 12px 5px 9px #ccc;
+  box-shadow: -2px 1px 5px 9px #ccc;
+  display: block;
+  margin-top: 10%;
+  margin-bottom: 15%;
+}
+
+.create-book {
+  position: relative;
+}
+
+.top10 {
+  margin-top: 10px;
+}
+
+.back {
+  height: 100%;
+}
+
+.d-flex {
+  background-image: url("./../../assets/images/mainback.jpg");
+}
+

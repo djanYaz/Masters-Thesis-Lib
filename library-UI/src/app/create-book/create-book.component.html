@@ -1,0 +1,61 @@
+<div class="back">
+  <div class="panel panel-primary">
+    <div class="d-flex align-items-center justify-content-center">
+      <div class="container p-5 create-book">
+        <h3>Добави книга</h3>
+        <form (ngSubmit)="onSubmit()" #myForm="ngForm">
+          <div class="row top10">
+            <label for="title">Заглавие</label>
+            <div class="col-sm-12">
+              <input class="form-control" type="text" id="title" required [(ngModel)]="title" name="title">
+            </div>
+          </div>
+
+          <div class="row top10">
+            <label for="author">Автор</label>
+            <div class="col-sm-12">
+              <input type="text" class="form-control" id="author" required [(ngModel)]="author" name="author">
+            </div>
+          </div>
+
+          <div class="row top10">
+            <label for="yearpub">Година на публикуване</label>
+            <div class="col-sm-12">
+              <input type="number" class="form-control" id="yearpub" required [(ngModel)]="year" name="yearpub">
+            </div>
+          </div>
+
+          <div class="row top10">
+            <label for="genre">Жанр</label>
+            <div class="col-sm-12">
+              <select data-live-search="true" name="selectedGenre" [(ngModel)]="selectedGenre" (change)="onChange($any($event.target).value)" class="form-select" id="genre" required>
+                <option name="genreType" [value]="genre.genreType" *ngFor="let genre of genres">{{genre.genreType}}</option>
+              </select>
+            </div>
+          </div>
+          <p [hidden]="myForm.form.valid" style="color: red">Не сте въвели всички полета</p>
+          <button type="submit" [disabled]="!myForm.form.valid" class="btn btn-primary">Запази</button>
+          <div class="top10">
+            <p><b>Пояснение: </b> <i>Не намираш жанра, който ти трябва в падащото меню? Няма проблем, можеш да го добавиш във формата вдясно <b>"Добави жанр"</b>.</i></p>
+          </div>
+        </form>
+      </div>
+      <div class="container p-5 add-genre">
+        <form (ngSubmit)="saveGenre()" #genreForm="ngForm">
+          <h3>Добави жанр</h3>
+          <div class="row top10">
+            <label for="genreType">Вид жанр</label>
+            <div class="col-sm-12">
+              <input class="form-control" type="text" id="genreType" required [(ngModel)]="genreType" name="genreType">
+            </div>
+            <p name="msg" style="color: red">{{msg}}</p>
+          </div>
+          <button type="submit" [disabled]="!genreForm.form.valid" class="btn btn-primary">Запази</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

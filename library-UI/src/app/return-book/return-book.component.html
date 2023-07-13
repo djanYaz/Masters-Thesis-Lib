@@ -1,0 +1,43 @@
+<div class="back">
+  <div class="panel panel-primary">
+    <div class="d-flex align-items-center justify-content-center">
+      <div class="return-book">
+        <div>
+          <table class="table table-hover table-bordered table-light">
+            <thead class="thead-dark">
+            <tr>
+              <th>Име</th>
+              <th>Фамилия</th>
+              <th>Телефон</th>
+              <th>Имейл</th>
+              <th>Книга</th>
+              <th>Автор</th>
+              <th>Дата на взимане</th>
+              <th>Дата на връщане</th>
+              <th>Действия</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let borrowbook of borrowBooks">
+              <td [ngStyle]="{'background-color': getColor(borrowbook.returnDate)}">{{borrowbook.reader.first_name}}</td>
+              <td [ngStyle]="{'background-color': getColor(borrowbook.returnDate)}">{{borrowbook.reader.last_name}}</td>
+              <td [ngStyle]="{'background-color': getColor(borrowbook.returnDate)}">{{borrowbook.reader.phone}}</td>
+              <td [ngStyle]="{'background-color': getColor(borrowbook.returnDate)}">{{borrowbook.reader.email}}</td>
+              <td [ngStyle]="{'background-color': getColor(borrowbook.returnDate)}">{{borrowbook.book.title}}</td>
+              <td [ngStyle]="{'background-color': getColor(borrowbook.returnDate)}">{{borrowbook.book.author}}</td>
+              <td [ngStyle]="{'background-color': getColor(borrowbook.returnDate)}">{{borrowbook.borrowDate}}</td>
+              <td [ngStyle]="{'background-color': getColor(borrowbook.returnDate)}">{{borrowbook.returnDate}}</td>
+              <td [ngStyle]="{'background-color': getColor(borrowbook.returnDate)}">
+                <button (click)="returnSelectedBook(borrowbook.id)" class="btn btn-primary">Върни книга</button>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
