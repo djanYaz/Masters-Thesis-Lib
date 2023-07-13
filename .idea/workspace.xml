@@ -1,17 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ff31dd60-af1f-4d2c-93df-ed46045ab915" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-UI/.browserslistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-UI/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-UI/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-UI/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-UI/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-UI/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-UI/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-UI/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-UI/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library-UI/tsconfig.spec.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2QCxze7vTfJ2xNc3FienhBKb1b5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../YEAR 3/SEMESTER 1/ST/Library" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="D:\UNI\YEAR 4\Master's Thesis\Library\library-UI\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\UNI\YEAR 4\Master's Thesis\Library\library-UI\library-app" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LibraryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="library" />
       <extension name="coverage">
@@ -30,5 +68,39 @@
         <item itemvalue="Spring Boot.LibraryApplication" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ff31dd60-af1f-4d2c-93df-ed46045ab915" name="Default Changelist" comment="" />
+      <created>1684871633793</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684871633793</updated>
+      <workItem from="1684871636640" duration="456000" />
+      <workItem from="1685816837140" duration="540000" />
+      <workItem from="1687078599221" duration="1615000" />
+      <workItem from="1687081674240" duration="17000" />
+      <workItem from="1687591337849" duration="422000" />
+      <workItem from="1688026991215" duration="1117000" />
+      <workItem from="1689071799441" duration="275000" />
+      <workItem from="1689253274314" duration="2752000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
